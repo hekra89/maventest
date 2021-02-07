@@ -13,6 +13,11 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>maventest</name>
 	<description>Maven Versionierungstest mit Github</description>
+	<scm>
+		<connection>scm:git:https://github.com/hekra89/maventest.git</connection>
+		<url>https://github.com/hekra89/maventest</url>
+		<developerConnection>scm:git:https://github.com/hekra89/maventest.git</developerConnection>
+	</scm>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -34,6 +39,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.3</version>
 			</plugin>
 		</plugins>
 	</build>
